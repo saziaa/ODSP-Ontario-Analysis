@@ -74,7 +74,7 @@ All analysis is conducted at the CMA level. No individual-level or identifiable 
 
 ### Q1 — Average ODSP Duration Has Increased Since 2015
 
-![Duration Trend](figures/q1_duration_trend.png)
+![Duration Trend](q1_duration_trend.png)
 
 Average ODSP duration declined between 2003 and 2009, stabilized through the early 2010s, and has increased steadily since 2015. The case-weighted trend consistently sits below the unweighted trend, confirming that larger-volume CMAs tend to have slightly shorter average durations than smaller CMAs. This is a structural signal — not a measurement artifact.
 
@@ -82,7 +82,7 @@ Average ODSP duration declined between 2003 and 2009, stabilized through the ear
 
 ### Q2 — Caseload Growth Has Stabilized While Duration Continues Rising
 
-![Caseload Trend](figures/q2_caseload_trend.png)
+![Caseload Trend](q2_caseload_trend.png)
 
 Total caseload grew steadily from 2003 to 2020, nearly doubling over the period, before stabilizing. Crucially, average duration continued rising after 2020 even as caseload growth flattened. This divergence indicates that rising long-term reliance is increasingly driven by persistence among existing recipients rather than new entrants — a distinction with direct implications for policy design.
 
@@ -92,7 +92,7 @@ Total caseload grew steadily from 2003 to 2020, nearly doubling over the period,
 
 CMAs were segmented using two dimensions: case-weighted average ODSP duration and a cumulative contribution index (average duration × annual caseload). Segmentation was assigned at the CMA level using median thresholds across all 15 CMAs.
 
-![CMA Segmentation](figures/q3_segmentation.png)
+![CMA Segmentation](q3_segmentation.png)
 
 > **Toronto note:** Toronto's cumulative contribution (~450M) is approximately 4× larger than the next highest CMA (Ottawa-Gatineau, ~109M). A robustness check using log-transformed contribution confirmed identical segment assignments under both specifications, indicating the segmentation is robust to Toronto's scale dominance. Raw contribution values are retained for interpretability.
 
@@ -130,11 +130,11 @@ Working-age composition (25–54) shows the strongest positive association with 
 
 Segment-level demographic composition varies little across all four CMA segments, as shown below.
 
-![Household Composition](figures/q4_household_composition.png)
+![Household Composition](q4_household_composition.png)
 
 Single-adult households consistently represent ~78–80% of cases in every segment. Among non-single households, couples and single-parent families together account for less than one-quarter of cases with only modest variation across segments.
 
-![Age Composition](figures/q4_age_composition.png)
+![Age Composition](q4_age_composition.png)
 
 Working-age adults (≤54) comprise roughly 60–65% of cases across all segments. Older adults (55+) show slightly higher representation in high-duration segments, but the variation is modest. Overall, no segment displays a demographic profile distinct enough to explain its duration or contribution classification — confirming that regional differences in ODSP burden are primarily structural and path-dependent rather than demographically driven.
 
@@ -188,7 +188,7 @@ An Elastic Net model was estimated incorporating three duration lags and lagged 
 
 **Alpha selection:** Grid search identified alpha = 0.2 as optimal (minimizing validation RMSE). This predominantly Ridge specification retains all informative predictors while controlling for multicollinearity among correlated lag terms, with a small Lasso component providing flexibility to eliminate uninformative predictors.
 
-![Alpha Selection](figures/alpha_selection.png)
+![Alpha Selection](alpha_selection.png)
 
 **`lambda.1se`** was used for final predictions — the most regularized model within one standard error of minimum CV error, preferred when generalization matters more than minimizing training error.
 
@@ -203,7 +203,7 @@ An Elastic Net model was estimated incorporating three duration lags and lagged 
 
 The Elastic Net outperforms the linear baseline on the held-out test set (RMSE: 0.728 vs 0.930 — a 22% reduction). Both models show elevated validation RMSE (~1.24), consistent with COVID-19 pandemic disruption to ODSP dynamics in 2020–2021 — an extraordinary structural break not present in the training data. The near-identical validation performance across both models confirms this elevation reflects an external shock rather than model-specific overfitting. Test performance recovering to 0.728 confirms meaningful predictive signal under more stable post-pandemic conditions.
 
-![Predicted vs Actual](figures/predicted_vs_actual.png)
+![Predicted vs Actual](predicted_vs_actual.png)
 
 ---
 
@@ -211,7 +211,7 @@ The Elastic Net outperforms the linear baseline on the held-out test set (RMSE: 
 
 Raw Elastic Net coefficients are not directly comparable across predictors with different scales. Standardized coefficients — raw coefficients multiplied by predictor standard deviation — are used to correctly assess relative predictor importance.
 
-![Feature Importance](figures/feature_importance.png)
+![Feature Importance](feature_importance.png)
 
 | Feature | Std. Coefficient | Direction |
 |---|---|---|
@@ -235,7 +235,7 @@ Raw Elastic Net coefficients are not directly comparable across predictors with 
 
 ### CMA Risk Forecast — One Year Ahead
 
-![CMA Risk Forecast](figures/cma_risk_forecast.png)
+![CMA Risk Forecast](cma_risk_forecast.png)
 
 | CMA | Predicted Avg Months |
 |---|---|
