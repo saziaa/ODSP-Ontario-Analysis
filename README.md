@@ -225,7 +225,7 @@ Raw Elastic Net coefficients are not directly comparable across predictors with 
 | lag1_prop_age_55_plus | 0.000 | — (eliminated) |
 | lag1_prop_fs3_plus | 0.000 | — (eliminated) |
 
-**Historical duration dominates.** The one-year lag (std. coef = 2.358) is the strongest predictor by a wide margin, confirming strong path dependence. The negative coefficients on lag2 (-0.511) and lag3 (-0.095) introduce a partial mean-reversion dynamic — prolonged elevation in duration over multiple years is partially self-correcting. This finding was not detectable with a single-lag specification.
+**Historical duration dominates.** The one-year lag (std. coef = 2.358) is the strongest predictor by a wide margin, confirming strong path dependence. The negative coefficients on lag2 (-0.511) and lag3 (-0.095) introduce a partial mean-reversion dynamic prolonged elevation in duration over multiple years is partially self-correcting. This finding was not detectable with a single-lag specification.
 
 **Three predictors were eliminated** by the Lasso regularization component (`prop_single`, `prop_age_55_plus`, `prop_fs3_plus`), contributing no additional predictive signal given the retained features.
 
@@ -255,7 +255,7 @@ Raw Elastic Net coefficients are not directly comparable across predictors with 
 | London | 59.24 |
 | Guelph | 58.77 |
 
-The top five ranked CMAs — Kingston, Thunder Bay, Peterborough, Brantford, and Greater Sudbury — all belong to the **Low Contribution – High Duration** segment identified in the EDA. This convergence between descriptive segmentation and model-based forecasting strengthens confidence in both findings.
+The top five ranked CMAs: Kingston, Thunder Bay, Peterborough, Brantford, and Greater Sudbury, all belong to the **Low Contribution – High Duration** segment identified in the EDA. This convergence between descriptive segmentation and model-based forecasting strengthens confidence in both findings.
 
 Predicted values are tightly clustered within a range of less than four months across all 15 CMAs, indicating that elevated long-term reliance risk is a shared structural condition across multiple regions rather than an isolated problem.
 
@@ -267,9 +267,9 @@ Guelph and Barrie — the benchmark CMAs — rank lowest, consistent with their 
 
 ## 🏁 Summary
 
-Long-term ODSP reliance across Ontario CMAs is primarily **structural and path-dependent** rather than driven by demographic composition. Historical duration is the dominant predictor of future duration at every level of analysis — descriptive, correlational, and predictive. Demographic factors play a secondary but meaningful role, with single-parent household share most consistently associated with longer durations.
+Long-term ODSP reliance across Ontario CMAs is primarily **structural and path-dependent** rather than driven by demographic composition. Historical duration is the dominant predictor of future duration at every level of analysis: descriptive, correlational, and predictive. Demographic factors play a secondary but meaningful role, with single-parent household share most consistently associated with longer durations.
 
-These findings point toward the need for **region-specific, long-term interventions** — particularly in smaller CMAs where persistent high durations are structurally embedded — rather than province-wide caseload management approaches that are dominated by Toronto's scale.
+These findings point toward the need for **region-specific, long-term interventions**  particularly in smaller CMAs where persistent high durations are structurally embedded rather than province-wide caseload management approaches that are dominated by Toronto's scale.
 
 ---
 
