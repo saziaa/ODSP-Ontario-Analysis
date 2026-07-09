@@ -50,7 +50,10 @@ ODSP-Ontario-Analysis/
 
 ## 🛢️ Data
 
-**Source:** Government of Canada – Open Data Portal  
+**Source:** Ontario Social Assistance case characteristics by census metropolitan area
+Government of Ontario, Open Data Portal
+https://data.ontario.ca/dataset/ontario-social-assistance-case-characteristics-by-census-metropolitan-area
+Dataset ID: 19474e66-26f5-4af4-8e21-f26c81ea84b1
 **Coverage:** January 2003 – December 2024  
 **Geography:** 15 Census Metropolitan Areas (CMAs) in Ontario  
 **Unit of analysis:** CMA-year panel (aggregated from monthly administrative records)
