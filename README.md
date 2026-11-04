@@ -122,7 +122,7 @@ Predicted changes from 2024 are small (between −0.8 and +0.1 months, average a
 - Duration is estimated from three groups with an assumed value for the open-ended group.
 - Regional data only: nothing here applies to individuals, and results are associations and short-term predictions, not causal claims.
 - The forecast is one-step-ahead extrapolation and does not account for policy or economic change.
-- - The penalty (lambda) was chosen with standard 10-fold cross-validation inside the training years, which uses random rather than time-ordered folds and may be slightly optimistic for correlated years. The mixing parameter was chosen on a separate validation period, and the 2022–2024 test years were never used for tuning.
+- The penalty (lambda) was chosen with standard 10-fold cross-validation inside the training years, which uses random rather than time-ordered folds and may be slightly optimistic for correlated years. The mixing parameter was chosen on a separate validation period, and the 2022–2024 test years were never used for tuning.
 
 ## Reproduce
 
