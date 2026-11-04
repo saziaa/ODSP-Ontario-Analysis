@@ -1,5 +1,5 @@
 # Understanding Long-Term ODSP Reliance Across Ontario CMAs (2003–2024)
-**A Policy-Focused Data Analysis & Forecasting Project | R**
+**A regional analysis of how long people stay on the Ontario Disability Support Program (ODSP), and a short-term forecast of where average duration is likely to stay highest**
 
 ---
 
