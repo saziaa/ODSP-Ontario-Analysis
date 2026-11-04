@@ -37,8 +37,8 @@ Average duration was not a steady rise. It fell from 55.9 months (2003) to 53.3 
 
 The caseload index peaked in 2020 and has been slightly lower since. From 2019 to 2022 the share of cases in the 0–35 month group fell from 23.4% to 15.5%, while the 60+ share rose from 64.9% to 70.7% (73.0% in 2024). This is consistent with fewer recent entrants, longer stays, or both; the data cannot separate them.
 
-![Average duration over time](figures/q1_duration_trend.png)
-![Caseload over time](updated_figures/q2_caseload_trend.png)
+![Average duration over time](q1_duration_trend.png)
+![Caseload over time](q2_caseload_trend.png)
 
 ### 3. Regional segments
 
@@ -64,15 +64,15 @@ Duration is estimated (see Data). Contribution is average duration × caseload i
 
 Toronto's contribution (about 476M) is several times larger than any other CMA's, but its average duration is the lowest. Ottawa-Gatineau (duration) and Oshawa (contribution) sit exactly on a median, so their placement is borderline.
 
-![CMA segmentation](figures/q3_segmentation.png)
+![CMA segmentation](q3_segmentation.png)
 
 ### 4. Demographics
 
 Household and age mix are similar across segments (single adults about 78–80% everywhere). Across 15 CMAs, only the 25–54 age share correlates significantly with average duration (r = 0.60, p = 0.018), which is one result out of nine uncorrected tests and should be read as descriptive.
 
-![Correlation](figures/q4_correlation_scatter.png)
-![Household composition](figures/q4_household_composition.png)
-![Age composition](figures/q4_age_composition.png)
+![Correlation](q4_correlation_scatter.png)
+![Household composition](q4_household_composition.png)
+![Age composition](q4_age_composition.png)
 
 ### 5. Prediction and forecast
 
@@ -86,10 +86,10 @@ Elastic Net beat the naive forecast in each of the three test years (2022: 0.68 
 
 The Elastic Net coefficients are best read as a level term (about 0.91) plus extrapolation of the most recent year-over-year change, i.e. momentum. Adding demographics improved validation error (1.05 → 0.97) but worsened test error (0.45 → 0.48), so they add no consistent predictive value. This is a statement about prediction, not about causes.
 
-![Alpha selection](figures/alpha_selection.png)
-![Predicted vs actual](figures/predicted_vs_actual.png)
-![Feature importance](figures/feature_importance.png)
-![Residual diagnostics](figures/lm_residual_diagnostics.png)
+![Alpha selection](alpha_selection.png)
+![Predicted vs actual](predicted_vs_actual.png)
+![Feature importance](feature_importance.png)
+![Residual diagnostics](lm_residual_diagnostics.png)
 
 **2025 forecast (ranking, not a level forecast).** Highest predicted average duration: Kingston, Peterborough, Thunder Bay, Greater Sudbury, St. Catharines-Niagara. The gaps between these and the next CMAs are small, and 14 of 15 CMAs are predicted to dip slightly, mirroring 2024's decline.
 
@@ -113,7 +113,7 @@ The Elastic Net coefficients are best read as a level term (about 0.91) plus ext
 
 Predicted changes from 2024 are small (between −0.8 and +0.1 months, average about −0.4), which is within the model's typical test error of about 0.5 months. The forecast is therefore best read as a ranking of where average duration is likely to remain highest, not as a prediction that any region will improve or worsen.
 
-![2025 forecast](figures/cma_risk_forecast.png)
+![2025 forecast](cma_risk_forecast.png)
 
 ## Limitations
 
