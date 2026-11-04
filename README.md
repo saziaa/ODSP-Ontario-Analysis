@@ -38,7 +38,7 @@ Average duration was not a steady rise. It fell from 55.9 months (2003) to 53.3 
 The caseload index peaked in 2020 and has been slightly lower since. From 2019 to 2022 the share of cases in the 0–35 month group fell from 23.4% to 15.5%, while the 60+ share rose from 64.9% to 70.7% (73.0% in 2024). This is consistent with fewer recent entrants, longer stays, or both; the data cannot separate them.
 
 ![Average duration over time](figures/q1_duration_trend.png)
-![Caseload over time](figures/q2_caseload_trend.png)
+![Caseload over time](updated_figures/q2_caseload_trend.png)
 
 ### 3. Regional segments
 
